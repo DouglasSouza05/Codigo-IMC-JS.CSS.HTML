@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Defer carrega JS após o HTML -->
+    <script src="assets/js/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Criando a Main -->
+    <main id="main_container">
+      <section id="image">
+        <img src="assets/images/illustration.svg" />
+      </section>
+
+      <!-- Section para entrada de dados -->
+      <section id="calculator">
+        <form id="form">
+          <h1 id="title">Calculadora IMC C/ JS, CSS e HTML</h1>
+
+          <!-- Divs para nome, peso e altura -->
+          <div class="input-box">
+            <label for="name"> Seu nome </label>
+            <div class="input-field">
+              <i class="fa-solid fa-signature"></i>
+              <input type="text" id="name" placeholder="Ex: Douglas" required />
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="weight"> Peso em Kg </label>
+            <div class="input-field">
+              <i class="fa-solid fa-weight-hanging"></i>
+              <input
+                type="number"
+                id="weight"
+                placeholder="Ex: 70,5"
+                required
+              />
+              <span>Kg</span>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="height"> Altura em Metros </label>
+            <div class="input-field">
+              <i class="fa-solid fa-ruler-vertical"></i>
+              <input
+                type="number"
+                id="height"
+                step="0.01"
+                placeholder="Ex: 1,80"
+                required
+              />
+
+              <span>m</span>
+            </div>
+          </div>
+
+          <button id="calculate">Calcular</button>
+        </form>
+
+        <div id="infos" class="hidden">
+          <div id="result">
+            <div id="imc">
+              <span>Seu IMC:</span>
+              <span id="value"></span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+
+          <div id="imc_Table">
+            <h1>Tabela de Classificação do IMC</h1>
+            <div id="table_header">
+              <span>Intervalo:</span>
+              <span>Classificação:</span>
+            </div>
+            <div class="tableBody" id="table_Body">
+              <!-- Aqui serão adicionadas as linhas da tabela via JavaScript -->
+            </div>
+          </div>
+
+          <!-- O link fica "escondido" -->
+          <div id="more_infos">
+            <a
+              href="https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude#:~:text=Ele%20aponta%20se%20o%20peso,pr%C3%B3ximo%20passo%20%C3%A9%20interpret%C3%A1%2Dlo."
+            >
+              Mais informações sobre o IMC:
+              <i class="fa-solid fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

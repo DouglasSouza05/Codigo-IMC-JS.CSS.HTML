@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+/* 
+Seletor "*" define o estilo global, para todos os elementos da página 
+"margin: 0" define a margem dos elementos
+"padding: 0" define o preenchimento de todos os elementos
+"box-sizing: border-box" defini o modelo de caixa dos elementos
+*/
+
+/* 
+  Comandos para posicionar os elementos ao centro
+  "display: flex" define o elemento body como contêiner flexível permitindo usar propriedade de alinhamento
+  "align-items: center" centraliza verticalmente dentro do flex
+  "justify:content: center" centraliza horizontalmente dentro do flex
+  */
+
+/* 
+  Comandos para estilizar
+  "border: " define uma borda com largura e cor
+  "padding: " define o preenchimento interno
+  "width: " define a largura do elemento como % da largura do container pai
+  "border-radius: " define um radio de borda
+  "box-shadow: " define uma sombra para o elemento
+  "display: flex" define o elemento como container flexível
+  "flex: " define a propriedade flex, usada para distribuir o espaço disponível entre elementos
+  "font-size: " define o tamanho da fonte. Unidade "rem" é relativa ao tamanho da fonte do elemento pai
+  "font-weight: " define o peso da fonte
+  "margin-left: " define uma margem esquerda para o elemento
+  "cursor: " define o cursos do mouse ao passar sobre o elemento
+  "min-width: " ocupar o minimo de px
+*/
+
+* {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140vh; /* Usando vh para altura total da viewport */
+  width: 98vw; /* Usando vw para largura total da viewport */
+  background: linear-gradient(90deg, rgba(215, 43, 158) 0%, #00ffff);
+}
+
+/* Para id usa-se "#" */
+#main_container {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  border-radius: 8px;
+  max-height: calc(100vh - 80px); /* 80px para acomodar o padding */
+  /* overflow: auto; */
+}
+
+#image img {
+  width: 40vi;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #262626;
+  border-radius: 8px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#title {
+  font-size: 2.25rem;
+  position: relative;
+  color: rgba(215, 43, 158);
+}
+
+#title::after {
+  position: absolute;
+  content: "";
+  background-color: #00ffff;
+  width: 8rem;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+/* Para class usa-se "." */
+.input-box label {
+  font-size: 1.1rem;
+  color: #00ffff;
+  font-weight: 400;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3f3f46;
+  padding: 0.3rem;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+  color: rgba(215, 43, 158);
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
+}
+
+.input-field input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #f8fafc;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input-field input:focus {
+  outline: none;
+}
+
+#calculate {
+  border: none;
+  margin-top: 0.7rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: rgba(215, 43, 158);
+  color: #f8fafc;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#result {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid #00ffff;
+  padding: 0.75rem 0;
+}
+
+#imc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.25rem;
+}
+
+#imc span:first-child {
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #00ffff;
+}
+
+#description {
+  flex: 0.94;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 15.5rem;
+  color: rgba(215, 43, 158);
+}
+
+#more_infos {
+  border-top: 1px solid #00ffff;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+#more_infos a {
+  color: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+#more_infos a:hover {
+  color: rgba(215, 43, 158);
+}
+
+/* ####################################################### */
+
+/* Estilos específicos para a tabela */
+#imc_Table {
+  text-align: center;
+  background-color: #262626;
+  padding: 0.5rem;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 1.7rem;
+}
+
+#table_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+#table_header span {
+  flex: 2;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+/* .tableBody {
+  margin-top: 1rem;
+} */
+
+/* Estilos para o cabeçalho h1 */
+h1 {
+  /* margin-bottom: 1rem; */
+  color: rgba(215, 43, 158);
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.table_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(215, 43, 158);
+  background-color: #3f3f46;
+}
+
+.table_row:nth-child(odd) {
+  background-color: #262626;
+}
+
+.table_row span {
+  flex: 1;
+  color: #f8fafc;
+  font-size: 1.2rem;
+}
+
+/* ####################################################### */
+
+/* Criando classe "hidden" que irá "sumir" com certas classes */
+.hidden {
+  display: none;
+}
+
+.normal {
+  color: #16a34a;
+}
+
+.attention {
+  color: #daa520;
+}
+
+.danger {
+  color: #dc2626;
+}
