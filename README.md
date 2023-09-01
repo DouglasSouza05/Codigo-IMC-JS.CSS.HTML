@@ -1,7 +1,7 @@
 # Codigo-IMC-JS.CSS.HTML
 Código sistema de IMC usando JavaScript, CSS e HTML
 
-Projeto foi criado no VSCODE usando extensão LIVE SERVER. Recomanda-se usar o mesmo.
+Projeto foi criado no VSCODE usando extensão LIVE SERVER. Recomenda-se usar o mesmo.
 
 Projeto Calculadora de IMC - HTML, CSS e JavaScript
 
