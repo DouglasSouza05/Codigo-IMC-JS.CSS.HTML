@@ -1,10 +1,31 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<script defer src='/build/bundle.js'></script>
+</head>
+
+<body>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="assets/css/styles.css" /> -->
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/build/bundle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,13 +40,14 @@
       referrerpolicy="no-referrer"
     />
     <!-- Defer carrega JS após o HTML -->
-    <script src="assets/js/scripts.js" defer></script>
+    <!-- <script src="assets/scripts.js" defer></script> -->
+    <script defer src="/build/bundle.js"></script>
   </head>
   <body>
     <!-- Criando a Main -->
     <main id="main_container">
       <section id="image">
-        <img src="assets/images/illustration.svg" />
+        <img src="illustration.svg" />
       </section>
 
       <!-- Section para entrada de dados -->
@@ -51,6 +73,7 @@
                 id="weight"
                 placeholder="Ex: 70,5"
                 required
+                step="0.01"
               />
               <span>Kg</span>
             </div>
@@ -67,7 +90,6 @@
                 placeholder="Ex: 1,80"
                 required
               />
-
               <span>m</span>
             </div>
           </div>

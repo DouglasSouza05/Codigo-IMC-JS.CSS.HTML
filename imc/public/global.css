@@ -1,34 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+/* html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-/* 
-Seletor "*" define o estilo global, para todos os elementos da página 
-"margin: 0" define a margem dos elementos
-"padding: 0" define o preenchimento de todos os elementos
-"box-sizing: border-box" defini o modelo de caixa dos elementos
-*/
+body {
+  color: #333;
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
 
-/* 
-  Comandos para posicionar os elementos ao centro
-  "display: flex" define o elemento body como contêiner flexível permitindo usar propriedade de alinhamento
-  "align-items: center" centraliza verticalmente dentro do flex
-  "justify:content: center" centraliza horizontalmente dentro do flex
-  */
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
 
-/* 
-  Comandos para estilizar
-  "border: " define uma borda com largura e cor
-  "padding: " define o preenchimento interno
-  "width: " define a largura do elemento como % da largura do container pai
-  "border-radius: " define um radio de borda
-  "box-shadow: " define uma sombra para o elemento
-  "display: flex" define o elemento como container flexível
-  "flex: " define a propriedade flex, usada para distribuir o espaço disponível entre elementos
-  "font-size: " define o tamanho da fonte. Unidade "rem" é relativa ao tamanho da fonte do elemento pai
-  "font-weight: " define o peso da fonte
-  "margin-left: " define uma margem esquerda para o elemento
-  "cursor: " define o cursos do mouse ao passar sobre o elemento
-  "min-width: " ocupar o minimo de px
-*/
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+} */
 
 * {
   font-family: "Poppins", "sans-serif";
@@ -42,8 +79,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 140vh; /* Usando vh para altura total da viewport */
-  width: 98vw; /* Usando vw para largura total da viewport */
+  height: 140vh;
+  width: 98vw;
   background: linear-gradient(90deg, rgba(215, 43, 158) 0%, #00ffff);
 }
 
