@@ -1,7 +1,10 @@
 # Codigo-IMC-JS.CSS.HTML
+
 Código sistema de IMC usando JavaScript, CSS e HTML
 
-Projeto foi criado no VSCODE usando extensão LIVE SERVER. Recomenda-se usar o mesmo.
+Projeto foi alterado para possuir a aplicação da Framework Svelte.
+Usar "cd .. imc" para entrar no projeto.
+Após isso usar "npm run dev" para rodar o código.
 
 Projeto Calculadora de IMC - HTML, CSS e JavaScript
 
@@ -14,13 +17,13 @@ Inclui campos para inserir o nome, peso e altura do usuário.
 Possui um botão para calcular o IMC.
 Exibe o resultado do cálculo do IMC, sua classificação e uma tabela de classificação do IMC.
 
-CSS (styles.css):
+CSS (global.css):
 
 Define o estilo visual da página, incluindo formatação de cores, tamanhos, margens e alinhamentos.
 Responsivo para diferentes tamanhos de tela usando unidades de medida relativas (vw, vh).
 Utiliza a fonte "Poppins" do Google Fonts para um design agradável.
 
-JavaScript (scripts.js):
+JavaScript (Calculator.svelte):
 
 Define a lógica de cálculo do IMC.
 Manipula os eventos do formulário para capturar os valores de peso e altura.
