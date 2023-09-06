@@ -1,10 +1,4 @@
 <script>
-  // Declarando as variáveis reativas do Svelte
-  // let weight = 0;
-  // let height = 0;
-  // let imc = 0;
-  // let description = "";
-  // let showResults = false;
 
   const form = document.getElementById("form");
 
