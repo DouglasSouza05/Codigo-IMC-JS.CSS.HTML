@@ -4,10 +4,17 @@ Projeto foi alterado para constituir a aplicação da Framework Svelte. Para pod
 
 - Clonar o Projeto.
 - Abrir um novo terminal.
+
 - Entrar na pasta "IMC" usando o seguinte comando:
 
 ```
 cd .. imc
+```
+
+- Instalar as dependências do Projeto:
+
+```
+npm i
 ```
 
 - E por fim, utilizar o comando para rodar o Projeto:
