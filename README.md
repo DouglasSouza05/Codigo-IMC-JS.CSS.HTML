@@ -3,13 +3,7 @@
 Projeto foi alterado para constituir a aplicação da Framework Svelte. Para poder ver o projeto, seguir os seguintes passos:
 
 - Clonar o Projeto.
-- Abrir um novo terminal.
-
-- Entrar na pasta "IMC" usando o seguinte comando:
-
-```
-cd .. imc
-```
+- Abrir um Novo Terminal.
 
 - Instalar as dependências do Projeto:
 
@@ -23,32 +17,31 @@ npm i
 npm run dev
 ```
 
-- O projeto irá retornar um link localhost no terminal, utilizar esse link no navegador para acessar o Projeto.
+- O Projeto irá retornar um link localhost no Terminal, utilizar esse link no navegador para acessar o Projeto.
 
 ## Projeto Calculadora de IMC - HTML, CSS e JavaScript
 
-Este é um projeto simples de uma Calculadora de Índice de Massa Corporal (IMC) que utiliza HTML, CSS e JavaScript para calcular o IMC com base no peso e altura fornecidos pelo usuário. O projeto inclui os seguintes componentes:
+Este é um projeto simples de uma Calculadora de Índice de Massa Corporal (IMC) que utiliza HTML, CSS e JavaScript para calcular o IMC com base no Peso e Altura fornecidos pelo Usuário. O projeto inclui os seguintes componentes:
 
 **HTML (index.html):**
 
-Define a estrutura do documento HTML.
-Inclui campos para inserir o nome, peso e altura do usuário.
+Define a Estrutura do Documento HTML.
+Inclui campos para inserir o Nome, Peso e Altura do Usuário.
 Possui um botão para calcular o IMC.
-Exibe o resultado do cálculo do IMC, sua classificação e uma tabela de classificação do IMC.
+Exibe o resultado do cálculo do IMC, sua Classificação e uma Tabela de Classificação do IMC.
 
 **CSS (global.css):**
 
-Define o estilo visual da página, incluindo formatação de cores, tamanhos, margens e alinhamentos.
-Responsivo para diferentes tamanhos de tela usando unidades de medida relativas (vw, vh).
-Utiliza a fonte "Poppins" do Google Fonts para um design agradável.
+Define o Estilo Visual da Página, incluindo Formatação de Cores, Tamanhos, Margens e Alinhamentos.
+Utiliza a Fonte "Poppins" do Google Fonts para um Design agradável.
 
 **JavaScript (Calculator.svelte):**
 
 Define a lógica de cálculo do IMC.
-Manipula os eventos do formulário para capturar os valores de peso e altura.
+Manipula os eventos do Formulário para capturar os valores de Peso e Altura.
 Calcula o IMC com base nos valores inseridos.
-Classifica o IMC e exibe o resultado na página.
-Gera a tabela de classificação do IMC dinamicamente.
-Adiciona classes de estilo com base na classificação do IMC.
+Classifica o IMC e exibe o resultado na Página.
+Gera a tabela de Classificação do IMC dinamicamente.
+Adiciona Classes de Estilo com base na Classificação do IMC.
 
-O projeto é interativo e fornece feedback imediato sobre o IMC do usuário, juntamente com a classificação correspondente. A tabela de classificação do IMC é criada dinamicamente com base nos dados fornecidos.
+O Projeto é interativo e fornece feedback imediato sobre o IMC do Usuário, juntamente com a Classificação correspondente. A tabela de Classificação do IMC é criada dinamicamente com base nos Dados fornecidos.
